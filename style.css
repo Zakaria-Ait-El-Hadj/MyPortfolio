@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.skills-span{
+   @apply bg-forth rounded-lg px-2 py-1;
+}
+
+#technologiesHolder img {
+   @apply h-8 w-8;
+}
+
+.light2{
+   --primary: 255,255,255;
+   --secondary :239,239,239;
+   --third :218,218,218;
+   --forth:50,130,184;
+   --text-color: 0,0,0; 
+}
+
+.dark{
+   --primary: 0,0,0;
+   --secondary : 54,54,54;
+   --third :38,38,38;
+   --forth:50,130,184; 
+   --text-color : 245,245,245;
+}
+
+   .truncate-lines-3 {
+     overflow: hidden;
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+   }
+

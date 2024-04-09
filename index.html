@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-primary text-textColor overflow-x-hidden">
+    <header>
+       <nav class="shadow-lg shadow-third pb-1">
+        <ul class="flex mx-4 my-2 font-semibold text-sm sm:text-base lg:text-lg items-center center">
+            <li class="lg:mr-auto  lg:ml-16  mx-auto">Zakaria Ait El Hadj</li>    
+            <button id="navbtn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>           
+            <li class="hidden cursor-pointer hover:scale-110 ml-4 sm:block "><a href="#home">Home</a></li>
+            <li class="hidden cursor-pointer hover:scale-110 ml-4 sm:block"><a href="#about">About</a></li>
+            <li class="hidden cursor-pointer hover:scale-110 mx-4 sm:block"><a href="#about">Background</a></li>
+            <li class="hidden cursor-pointer hover:scale-110 mr-4 sm:block"><a href="#projects">Projects</a></li>
+            <div class="hidden sm:flex ml-auto gap-4">
+            <img id="modeImg" class="cursor-pointer h-7 w-7 m-auto" src="assets/icons8-soleil-24.svg">
+            <a id="downloadLi" href="assets/myCV.pdf" download="assets/myCV.pdf" class="flex bg-secondary px-6 py-2 rounded-lg cursor-pointer hover:scale-105 hover:bg-third gap-x-2   ">Download CV <img src="assets/icons8-télécharger-64.png" class="w-5 h-5 self-center "></a>        
+            </div>
+            <!-- <li class="mr-auto ">Zakaria Ait El Hadj</li>     
+            <li class="cursor-pointer hover:scale-110 ml-4 "><a href="#home">Home</a></li>
+            <li class="cursor-pointer hover:scale-110 mx-4 "><a href="#about">About</a></li>
+            <li class="cursor-pointer hover:scale-110 mr-4 "><a href="#projects">Projects</a></li>
+            <li class="cursor-pointer hover:scale-110 mr-4 "><a href="#contact">Contact</a></li>
+            <div class="flex ml-auto gap-4">
+            <img id="modeImg" class="cursor-pointer h-7 w-7 m-auto" src="assets/icons8-soleil-24.svg">
+            <a id="downloadLi" href="#" download="assets/myCV.pdf" class="flex  bg-secondary px-6 py-2 rounded-lg cursor-pointer hover:scale-105 hover:bg-third gap-x-2 ">Download CV <img src="assets/icons8-télécharger-64.png" class="w-5 h-5 self-center "></a>        
+            </div> -->
+        </ul>
+        <div  id="navbar-default" class="hidden w-auto">
+            <ul class="flex flex-col gap-4 mx-4 my-2 font-semibold text-sm items-start">
+            <li class="cursor-pointer hover:scale-110  "><a href="#about">About</a></li>
+            <li class="cursor-pointer hover:scale-110  "><a href="#about">Background</a></li>
+            <li class="cursor-pointer hover:scale-110 "><a href="#projects">Projects</a></li>
+            <div class="flex flex-col gap-4">
+            <img id="modeImg2"  class="cursor-pointer h-7 w-7" src="assets/icons8-soleil-24.svg">
+           <a id="downloadLi" href="#" download="assets/myCV.pdf" class="flex  bg-secondary px-6 py-2 rounded-lg cursor-pointer hover:scale-105 hover:bg-third gap-x-2 ">Download CV <img src="assets/icons8-télécharger-64.png" class="w-5 h-5 self-center "></a>        
+           </div>
+           </ul>
+        </div>
+       </nav>
+       <div id="home" class="flex flex-wrap lg:flex-nowrap h-5/6 ">
+        <div class="w-full display flex flex-col gap-8 justify-center px-8 pb-8 lg:p-20 order-2 lg:order-1">
+            <h1 class="font-semibold text-4xl text-center lg:text-start">Full Stack Developer</h1>
+            <p class="text-center lg:text-start">Hi 👋! My name is <span class="text-forth font-semibold">Zakaria Ait El Hadj</span>. I'm a passionate full-stack developer.</p>
+            <div class="flex mx-auto gap-4 lg:justify-between lg:w-2/4">
+                <div class="w-10 h-10 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                    <a href="https://github.com/Zakaria-Ait-El-Hadj" target="_blank"><img class="h-7 w-7" src="assets/technologies/icons8-github.svg"></a>
+                </div>
+                <div class="w-10 h-10 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                    <a href="https://www.linkedin.com/in/zakaria-ait-el-hadj" target="_blank"><img class="h-7 w-7" src="assets/technologies/icons8-linkedin (1).svg" ></a>
+                </div>
+                <div class="w-10 h-10 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                    <a class="gmailLink" href="#" target="_blank"><img class="h-7 w-7" src="assets/icons8-gmail-nouveau.svg" ></a>
+                </div>               
+                <div class="w-10 h-10 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                    <a href="https://wa.me/+212706195396" target="_blank"><img class="h-7 w-7" src="assets/icons8-whatsapp.svg"></a>
+                </div>
+                <div class="w-10 h-10 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                    <a href="https://www.instagram.com/aitelhadjzakaria" target="_blank"><img class="h-7 w-7" src="assets/technologies/icons8-instagram (1).svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex order-1 lg:order2">
+            <img class="bg-secondary/40 rounded-img h-3/5 w-3/6 self-center mx-auto overflow-hidden animate-imgAnimation border " src="assets/myPicture.png">
+        </div>
+       </div>
+    </header>
+    <main>
+        <section id="about" class="mb-8 w-screen border-t-2">
+            <h2 class="font-black text-center text-2xl mb-8 mt-4 ">About Me</h2>
+            <div class="flex flex-wrap lg:flex-nowrap">
+             <div class="flex w-full lg:w-1/2">
+              <div class="flex flex-col mb-8 mx-8 sm:mx-16 lg:mx-16 shadow-lg shadow-third w-full rounded-3xl px-2 border">
+               <h3 class="font-semibold text-center text-xl my-2 mb-auto">Introduction</h3>
+               <p class="font-normal text-base text-center mb-4">Hi, I'm Zakaria Ait El Hadj, a Full Stack Developer from Casablanca. Currently undergoing certified training in <b>MERN</b> (MongoDB, Express.js, React.js, Node.js) Full Stack development.Skilled in <b>JavaScript, Tailwind CSS, Bootstrap, jQuery/Ajax, C#</b>, and <b>ASP.NET Core</b> MVC architecture. Eager to contribute to innovative projects and collaborate with like-minded professionals. Let's connect on LinkedIn <a class="text-blue-600" href="https://www.linkedin.com/in/zakaria-ait-el-hadj" target="_blank">@zakaria-ait-el-hadj.</a></p>
+               <div class="flex items-center justify-center mt-auto gap-4 mb-3">
+                <a href="assets/myCV.pdf" target="_blank" class="flex font-normal text-base text-center rounded-lg px-4 py-2 bg-forth w-fit cursor-pointer gap-x-2">View CV <img src="assets/icons8-visible-50.png" class="w-5 h-5 self-center "></a>
+                <a href="assets/myCV.pdf" download="assets/myCV.pdf" class="flex bg-secondary px-4 py-2 rounded-lg cursor-pointer hover:scale-105 hover:bg-third gap-x-2 ">Download <img src="assets/icons8-télécharger-64.png" class="w-5 h-5 self-center "></a>
+               </div>          
+            </div>
+             </div>
+             <div class="flex w-full lg:w-1/2 gap-4 flex-wrap lg:flex-nowrap lg:flex-col">
+              <div class="flex flex-col w-full ">
+                <h3 class="font-semibold text-lg mb-4 text-center lg:text-start">Technologies</h3>
+                <div class="flex gap-4 flex-wrap justify-center mx-3 lg:mx-0  lg:justify-start mb-3">
+                    <!-- 
+                  <span class="skills-span">HTML</span>
+                  <span class="skills-span">CSS</span>
+                  <span class="skills-span">Tailwind</span>
+                  <span class="skills-span">Bootstrap</span>
+                  <span class="skills-span">Javascript</span>
+                  <span class="skills-span">React</span>
+                  <span class="skills-span">Flutter</span>
+                </div> -->
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-html5.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-css.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-javascript.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-manuscrit.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-jquery.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-nodejs.svg">
+                <img id="express2" class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-express-js.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-réagir.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-bootstrap.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-tailwind-css.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/c--4.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/dotnet-ar21.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-logo-java-coffee-cup.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-python.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-django.svg">
+                <img id="flask" class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-ballon.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-dard.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-battement.svg">
+              </div>
+              <div class="flex flex-col w-full ">
+                <h3 class="font-semibold text-lg mb-4 text-center lg:text-start">Development Tools</h3>
+                <div class="flex gap-4 flex-wrap justify-center mx-3 lg:mx-0 lg:flex-nowrap lg:justify-start mb-3">
+                 <!--  
+                    <span class="skills-span">NodeJs</span>
+                  <span class="skills-span">ExpressJs</span>
+                  <span class="skills-span">C#</span>
+                  <span class="skills-span">Dart</span>
+                  <span class="skills-span">Python</span>
+                  <span class="skills-span">Java</span>
+                </div> -->
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-git.svg">
+                <img id="github" class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-github.svg">
+                
+                <svg class="w-10 h-10 lg:w-14 lg:h-14"  viewBox="0 0 128 128">            
+                <path fill="#f37036" d="M62.988 1.943c-12.929.2-25.904 4.428-36.925 12.94-27.125 20.953-32.13 59.93-11.176 87.055 20.957 27.123 59.937 32.124 87.058 11.167 27.114-20.952 32.118-59.918 11.172-87.039C100.68 9.96 81.884 1.65 62.988 1.943zm28.875 23.139a9.27 9.27 0 0 1 5.586 1.914l-8.068 8.117a.84.84 0 0 0-.076.098.83.83 0 0 0-.239.55.832.832 0 0 0 .313.65h.002l6.1 6.1a9.044 9.044 0 0 1-10.028-1.913c-2.586-2.6-3.336-6.504-1.953-9.891 1.383-3.39 4.68-5.605 8.363-5.625zm7.12 3.432a8.87 8.87 0 0 1 2.033 5.674 9.15 9.15 0 0 1-2.688 6.464 9.989 9.989 0 0 1-1.098.895L92.307 36.7l-.963-.963.265-.265 7.373-6.96zm-.366 4.193a.777.777 0 0 0-.55.031.731.731 0 0 0-.36.426.73.73 0 0 0 .05.559 2.226 2.226 0 0 1-.257 2.328.64.64 0 0 0-.195.488c.004.184.07.36.195.492a.58.58 0 0 0 .414 0 .68.68 0 0 0 .672-.207 3.573 3.573 0 0 0 .465-3.777v.004a.777.777 0 0 0-.434-.344zM79.34 39.43a5.584 5.584 0 0 1 3.31 1.226 4.756 4.756 0 0 0-2.681 1.34L57.162 64.701l-4.476-4.476c11.828-11.772 19.06-17.921 23.556-19.936a5.584 5.584 0 0 1 3.098-.86zm3.965 2.96a2.895 2.895 0 0 1 2.043.844 2.786 2.786 0 0 1 .879 2.121 2.869 2.869 0 0 1-.985 2.07l-24.25 21.106-2.617-2.617 22.887-22.68a2.895 2.895 0 0 1 2.043-.843zm2.994 6.698c-1.69 6.702-10.647 15.783-19.987 24.607l-3.777-3.773L86.3 49.088zM51.367 61.547l.274.27 3.513 3.513-9.63 2.06 5.843-5.843zm5.793 5.84.004.004 1.168 1.195a1.086 1.086 0 0 0 .018.084l.078.012.248.254.82.84-5.385.66 3.05-3.05zm3.867 4.076 3.578 3.576A126.992 126.992 0 0 1 38.75 91.695a1.44 1.44 0 0 0-.777 1.653l1.035 4.5a.31.31 0 0 1 0 .363.31.31 0 0 1-.414 0l-6.102-6.152L51.3 72.975l9.728-1.512zm-29.933 21.94.869.814 4.492 4.492-10.016-.648 4.655-4.659z"></path>           
+                </svg>
+                      
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-visual-studio.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-code-studio-visuel-2019.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-studio-android.svg">
+                <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-intellij-idea.svg">
+                <img id="unity" class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-unité.svg">
+              </div>
+              <div class="flex flex-col w-full">
+                <h3 class="font-semibold text-lg mb-4 text-center lg:text-start">Database</h3>
+                <div class="flex gap-4 flex-wrap justify-center mx-3 lg:mx-0 lg:flex-nowrap lg:justify-start">
+                    <!-- <span class="skills-span">MongoDb</span>
+                    <span class="skills-span">Sql Server</span> -->                   
+                    <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-mongodb.svg">
+                    <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-serveur-microsoft-sql.svg">
+                    <img class="w-10 h-10 lg:w-14 lg:h-14" src="assets/technologies/icons8-sql-60.png">
+                </div>
+              </div>
+             </div>
+            </div>
+        </section>   
+        <section id="background" class="mb-16 w-screen border-t-2 max-w-full">
+            <h2 class="font-black text-center text-2xl mb-8 mt-4 ">Background</h2>
+            <div class="flex flex-wrap lg:flex-nowrap">
+                <div class="flex w-full lg:w-1/2 mx-8 lg:mx-16">
+                    <div class="flex flex-col w-full border px-4 py-4 mb-8 lg:mb-0 rounded-2xl shadow-lg shadow-third"> 
+                        <div class="pb-3">
+                            <h3 class="text-center font-bold text-lg">Education</h3>
+                        </div>             
+                        <div class="flex justify-between gap-2">
+                            <h4 class="font-semibold text-base">MERN Full Stack : JobInTech</h4>
+                            <p class="text-base max-w-full min-w-fit">Janvier – Juin 2024</p>
+                        </div>
+                        <p class="text-base pb-4 pt-3 pl-3">Formation certifiée</p>
+    
+                        <div class="flex justify-between gap-2">
+                            <h4 class="font-semibold text-base">Licence en developpement des Applications web et Mobiles</h4>
+                            <p class="text-base max-w-full min-w-fit">2022 - 2023</p>
+                        </div>
+                        <p class="text-base pb-4 pt-3 pl-3">Ecole Supérieure De Technologie casablanca</p>
+    
+                        <div class="flex justify-between gap-2">
+                            <h4 class="font-semibold text-base">Ingénierie Informatique et Réseaux</h4>
+                            <p class="text-base max-w-full min-w-fit">2018 – 2020</p>
+                        </div>
+                        <p class="text-base pb-4 pt-3 pl-3">Ecole Marocaine Des Sciences DeL’igenieur casablanca</p>
+    
+                        <div class="flex justify-between gap-2">
+                            <h4 class="font-semibold text-base">BAC en Science Physique</h4>
+                            <p class="text-base max-w-full min-w-fit">2017 – 2018</p>
+                        </div>
+                        <p class="text-base pt-3 pl-3">Groupe Scolaire Berrada casablanca</p>
+                    </div>
+                </div>
+                <div class="flex w-full lg:w-1/2 mx-8 lg:mr-16 lg:ml-0">
+                    <div class="flex flex-col w-full border px-4 py-4 rounded-2xl shadow-lg shadow-third">
+                        <div class="pb-3">
+                            <h3 class="text-center font-bold text-lg">Experiences</h3>
+                        </div>
+    
+                        <div class="flex justify-between gap-2 ">
+                            <h4 class="font-semibold text-base">ARK-X Talent Factory Stage operationnel Développeur MERN</h4>
+                            <div class="max-w-full min-w-fit">
+                                <p class="text-base">02/2024 - present</p>
+                            </div>
+                        </div>
+                        <div class="text-base pb-4 pt-3 pl-3">
+                            <div class="pb-2">
+                            <span class="font-semibold text-base">Développement Front-End :</span>
+                            Concevoir et développer l'interface UI avec React.js.
+                            Intégrer les designs et maquettes fournis par les équipes de
+                            conception.
+                            Assurer la navigation et l'expérience utilisateur (UX) fluide
+                            sur le site ou l'application.
+                            </div>
+                            <div class="pb-2">
+                            <span class="font-semibold text-base">Développement Back-End :</span>
+                            Mettre en place des serveurs et des API avec Node.js et
+                            Express.js.
+                            Gérer les bases de données MongoDB : conception, création
+                            de schémas, requêtes, etc. Assurer la gestion des routes, la
+                            validation des données et les opérations CRUD.
+                            </div>
+                            <div>
+                            <span class="font-semibold text-base">Gestion de Base de Données :</span>
+                            Concevoir et maintenir des bases de données MongoDB.
+                            Écrire et optimiser des requêtes pour accéder et manipuler
+                            les données. 
+                            </div>
+                            </div>
+    
+                        <div class="flex justify-between gap-2">
+                            <h4 class="font-semibold text-base">Sogelease Stage de Fin d’étude Developpeur Full Stack</h4>
+                            <p class="text-base max-w-full min-w-fit">Avril - juin 2023 </p>
+                        </div>
+                        <p class="text-base pb-4 pt-3 pl-3">Création d'une Application web en C# , ASP.NET CORE MVC , JAVASCRIPT , JQUERY/AJAX et SQL Server Validation des données et les opérations CRUD.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="flex flex-col border-t-2">
+            <h2 class="font-black text-center text-2xl mb-4 mt-4">Projects</h2>
+            <div class="flex mb-12 flex-wrap lg:flex-nowrap">
+                <div class="flex flex-col gap-4 w-full p-8 shadow-lg shadow-third rounded-2xl mx-8 lg:ml-16 my-3 lg:my-0 border">
+                    <h2 class="font-bold text-center block h-1/5">Node.js CRUD Application with User Authentication and Authorization</h2>
+                    <img class="h-1/2" src="assets/dev.png">
+                    <p class="truncate-lines-3">Built a Backend CRUD application using <b>Node.js</b>, <b>Express.js</b>, and <b>MongoDB</b>, featuring user authentication and authorization functionalities implemented with <b>Passport.js</b>. Users can create accounts, log in securely, and perform CRUD operations on their own blogs. Admin privileges enable manipulation of all blogs, ensuring robust security and data privacy. Leveraged best practices in web development and security to create a reliable and scalable application.</p>
+                    <button class="flex flex-col self-center cursor-pointer bg-forth w-fit rounded-lg px-4 py-2" id="prj1Btn" type="button">Read More</button>
+                </div>
+                <div class="flex flex-col gap-4 w-full p-8 shadow-lg shadow-third rounded-2xl mx-8 lg:ml-8 my-3 lg:my-0 border">
+                    <h2 class="font-bold text-center block h-1/5">Candidate Submission Portal with ASP.NET Core MVC and Identity Framework</h2>
+                    <img class="h-1/2" src="assets/dev.png">
+                    <p class="truncate-lines-3">Developed a comprehensive candidate submission portal using <b>ASP.NET Core MVC</b> and <b>Identity Framework</b>, leveraging <b>SQL Server</b> for robust data storage and management. The platform allows individuals to submit their candidacy information along with their CV securely. Upon successful submission, candidates receive automated email notifications confirming receipt of their application. Utilized modern web development techniques and authentication best practices to ensure data security and user privacy throughout the submission process.</p>
+                    <button class="flex flex-col self-center cursor-pointer bg-forth w-fit rounded-lg px-4 py-2" id="prj2Btn" type="button">Read More</button>
+                </div>
+                <div class="flex flex-col gap-4 w-full p-8 shadow-lg shadow-third rounded-2xl mx-8 lg:ml-8 lg:mr-16 my-3 lg:my-0 border">
+                    <h2 class="font-bold text-center block h-1/5">Leasing Management System with ASP.NET Core MVC and SQL Server</h2>
+                    <img class="h-1/2" src="assets/leasing.png">
+                    <p class="truncate-lines-3">Developed a comprehensive leasing management system using <b>ASP.NET Core MVC</b>,with <b>SQL Server</b> for robust data storage. Implemented custom login functionality without relying on external frameworks, with two distinct roles: worker and admin. The system enables efficient management of client leases, tracking unpaid balances with detailed timestamps and relevant information. Workers can access client data in tabular format, allowing them to modify or delete specific outstanding payments. Admin privileges include account creation for workers and full access to all system functionalities. Leveraged <b>AJAX</b> for seamless <b>API requests</b> and dynamic <b>DOM manipulation</b>, ensuring a smooth user experience throughout the platform.</p>
+                    <button class="flex flex-col self-center cursor-pointer bg-forth w-fit rounded-lg px-4 py-2" id="prj3Btn" type="button">Read More</button>
+                </div>
+            </div>     
+  
+  <!-- Main modal -->
+  <div id="default-modal" tabindex="-1" aria-hidden="true" class="flex z-50 fixed w-screen h-screen inset-0 mx-auto bg-gray-500/40 hidden"> 
+      <div class="relative p-4 w-full max-w-2xl max-h-full self-center mx-auto ">
+          <!-- Modal content -->
+          <div class="relative bg-primary/95 rounded-lg ">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                  <h3 id="modalTitle" class="text-sm md:text-lg sm:text-xl font-semibold  ">                     
+                  </h3>
+                  <button id="close" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-10 h-10 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
+                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                      </svg>
+                      <span  class="sr-only">Close modal</span>
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-4 md:p-5 space-y-4">
+                  <p id="modalDescription" class="text-sm sm:text-base leading-relaxed ">
+
+                  </p>
+              </div>
+              <!-- Modal footer -->
+              <div id="technologiesHolder" class="flex flex-wrap sm:flex-row items-center justify-between p-4 md:p-5 border-t border-gray-200 rounded-b">
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    </section>  
+    
+    </main>
+    <footer class="border-t">
+      <div class="mx-16 my-4 flex gap-4 flex-wrap lg:flex-nowrap">
+        <p>Portfolio developed by <span class="text-forth">@zakaria ait el hadj</span></p>
+        <div class="flex gap-4 lg:w-2/4 mx-auto lg:mx-0">
+            <div class="w-8 h-8 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                <a href="https://github.com/Zakaria-Ait-El-Hadj" target="_blank"><img class="h-6 w-6" src="assets/technologies/icons8-github.svg"></a>
+            </div>
+            <div class="w-8 h-8 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                <a href="https://www.linkedin.com/in/zakaria-ait-el-hadj" target="_blank"><img class="h-6 w-6" src="assets/technologies/icons8-linkedin (1).svg" ></a>
+            </div>
+            <div class="w-8 h-8 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                <a class="gmailLink" href="#" target="_blank"><img class="h-6 w-6" src="assets/icons8-gmail-nouveau.svg" ></a>
+            </div>           
+            <div class="w-8 h-8 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                <a href="https://wa.me//+212706195396" target="_blank"><img class="h-6 w-6" src="assets/icons8-whatsapp.svg"></a>
+            </div>
+            <div class="w-8 h-8 border bg-white rounded-50p flex items-center justify-center shadow-lg shadow-third hover:scale-125">
+                <a href="https://www.instagram.com/aitelhadjzakaria" target="_blank"><img class="h-6 w-6" src="assets/technologies/icons8-instagram (1).svg"></a>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="modal.js"></script>
+    <script src="navbar.js"></script> 
+</body>
+</html>
